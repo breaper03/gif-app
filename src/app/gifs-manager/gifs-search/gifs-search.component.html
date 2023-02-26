@@ -1,0 +1,15 @@
+<div class="row p-3">
+  <h5>Buscar: </h5>
+  <div class="col" id="searchBar">
+    <input
+      id="searchBar"
+      type="text"
+      placeholder="Buscar"
+      class="form-control"
+      (keyup.enter)="search(txt.value)"
+      #txt
+    >
+    <button (click)="search(txt.value)" class="btn btn-primary"><i class="bi bi-search"></i></button>
+  </div>
+</div>
+<hr class="text-dark">
